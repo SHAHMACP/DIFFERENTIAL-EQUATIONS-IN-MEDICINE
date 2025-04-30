@@ -1,0 +1,93 @@
+\chapter*{\textbf{PRELIMINARIES}}
+\thispagestyle{empty}
+\numberwithin{equation}{chapter}
+ 
+ 
+ 
+
+ 
+ \par An equation involving independent and dependent variables and the derivatives or differentials with one or more dependent variable with respect to one or more independent variable is called a differential equation.
+%
+%
+\section*{Different types and classification}
+\subsection*{Ordinary differential equation(ODE)} 
+ \par A differential equation which involves derivatives with respect to a single independent variable is known as ODE.
+\subsection*{Partial differential equation} \par A differential equation which contains two or more independent variables and partial derivatives with respect to them is called a partial differential equation.
+\section*{Order of differential equation}                                      
+\par The order of highest derivative involved in a   differential equation is called the order of a differential equation.
+ 
+\section*{Degree of a differential equation}
+ \par The degree of a differential equation is the degree of the highest ordered derivative present in the equation, after the differential equation has been made from the radicals and fractions as far as derivatives are concerned.
+ 
+\section*{Linear and non linear differential equations} 
+ \par A differential equation in which the dependent variable and all its derivatives present occurs in the first degree only and no product of dependent variable or derivatives occur is known as linear differential equation. A differential equation which is not linear is called a non linear differential equation.
+ \par A solution of a differential equation is a relation between the dependent variable and independent variable not involving the derivatives such that the relation and the derivatives obtained from it satisfies the given differential equation.                                             
+ \section*{General, particular  and singular solutions} 
+ \par A function which satisfies the given differential equation is called its solution. The solution  which contains as many arbitrary constants as the order of the differential equation is called the general solution and the solution free from arbitrary constants is known as particular solution. 
+ \par A solution which cannot be derive from the general solution but still is a solution of the given differential equation is called the singular solution.
+ \section*{Methods of solving first order, first degree differential equation} 
+ \subsection*{Differential equation with variable separable :}
+ \par If the DE can be put in the form  $f_{1}(x)dx + f_{2}(x)dx = 0 $, we say that variables are separable and the solution is obtained by integrating $  \int f_{1}(x)dx + \int f_{2}(x)dx = c$.
+  
+ \subsection*{Homogenous differential equation} \par A differential equation which can be expressed in the form   $ \dfrac{dy}{dx}=f(x,y)$ or $ \dfrac{dx}{dy}=g(x,y)$ where $f(x,y)$ and $g(x,y)$ are homogenous equations of degree zero is called a homogeneous differential equation.
+ \subsection*{First order linear differential equation} 
+ \par A DE of the form $\frac{dy}{dx}+Py=Q$, where P and Q are constants of function of x only is called a first order linear  differential equation.      
+\section*{Second order linear equation}
+\par Generally a second order linear equation is written in the form of $Ay^{''}+By^{'}+Cy=0$ (homogenous). If $y=e^{rt}$ then $r^{2}+r+1=0$ which is a characteristic equation and when quadratic is solved we get the general solution $y_{h}$ for the homogenous equation.
+\par Furthermore the solution to a non homogenous equation is $y=y_{h}+y_{p}$ where $y_{p}$ is the particular solution.
+\section*{Under, Over and Critical Damping}
+\par Let the equation $m\ddot{x} + b\dot{x} + kx = 0$,  with $m > 0$, $b \geq 0$ and $k > 0$. It has characteristic equation $ms^{2} + bs + k = 0$ with characteristic roots $\frac{-b\pm \sqrt{b^{2} - 4mk}}{2m} $ .\\ 
+There are three cases depending on the sign of the expression under the square root:
+ 
+ \subsection*{Under damping} (non-real complex roots, $b^{2} < 4mk$ , b is small relative to m and k).
+ General real solution : $x(t)= e^{\frac{-bt}{2m}}(C_{1} \cos(\omega dt)+ C_{2} \sin(\omega dt))$
+ 
+ \subsection*{Over damping} (distinct real roots, $b^{2} > 4mk$ , b is large relative to m and k).
+ General solution:$ x(t) = C_{1}e^{r_{1}t} + C_{2}e^{r_{2}t}$.
+ \subsection*{Critical Damping} (repeated real roots, $b^{2} = 4mk$, b is just between over and under damping)
+ General solution: $x(t) = e^{\frac{-bt}{2m}}(C_{1} + C_{2}t)$.
+ 
+\section*{Bernoulli differential equation}
+ \par In mathematics, an ordinary differential equation of the form:$ y^{'}+P(x)y=Q(x)y^{n}$, is  called a Bernoulli differential equation where n is any real number and  $n\neq 0$ and $n\neq 1$. Bernoulli equations are special because they are non linear differential equations with known exact solutions.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ \section*{Michaelis–Menten equation}
+ \par This equation is one of the best-known models of enzyme kinetics. The model takes the form of an equation describing the rate of enzymatic reactions, by relating reaction rate (rate of formation of product) to the concentration of a substrate S. Its formula is given by $ \nu = \frac{V_{max}[S]}{K_{m}+[S]}$\\
+ 
+ This equation is called the Michaelis–Menten equation. Here, represents the maximum rate achieved by the system, at saturating substrate concentration. The Michaelis constant   is the substrate concentration at which the reaction rate is half of $V_{max}$ .
+ 
+ \section*{Root-mean-square deviation (RMSD)} 
+ \par The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSD represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences. 
+ 
+ 
+ \section*{Levenberg–Marquardt algorithm (LMA)}
+ \par also known as the damped least-squares (DLS) method, is used to solve non-linear least squares problems.  The primary application of the Levenberg–Marquardt algorithm is in the least-squares curve fitting problem: given a set of  empirical datum pairs $(x_{i}, y_{i})$ of independent and dependent variables, find the parameters \beta of the model curve  $f(x, \beta)$  so that the sum of the squares of the deviations S(\beta) is minimized:
+ 
+ 	$$ \hat{\beta} \in \arg \min_{\beta} S(\beta)= \arg \min_{\beta} \sum [y_{i}-f(x_{i},\beta)]^{2} $$
+ which is assumed to be non-empty.
+ 
+ \section*{Difference-differential equation }
+ \par A difference-differential equation is a two-variable equation consisting of a coupled ordinary differential equation and recurrence equation.
+ 
+ \section*{Cauchy problem} 
+ \par A Cauchy problem asks for the solution of a partial differential equation that satisfies certain conditions in the domain. A Cauchy problem can be an initial value problem or a boundary value problem.
+ 
+
+
+
+
+\section*{Heaviside step function}
+
+\par The Heaviside step function, or the unit step function, usually denoted by H or θ (but sometimes u, 1 or 𝟙), is a discontinuous function, named after Oliver Heaviside whose value is zero for negative arguments and one for positive arguments.
+
+
+
