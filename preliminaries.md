@@ -68,8 +68,8 @@ $$Ay'' + By' + Cy = 0$$
 
 For a homogeneous equation, the characteristic equation:  
 $$r^2 + r + 1 = 0$$  
-Solving gives general solution \( y_h \).  
-Non-homogeneous solution is:  
+Solving gives a general solution \( y_h \).  
+The non-homogeneous solution is:  
 $$y = y_h + y_p$$
 
 ---
@@ -95,37 +95,59 @@ $$x(t) = e^{rac{-bt}{2m}}(C_1 + C_2 t)$$
 
 ## 🧮 Bernoulli Differential Equation
 
-A non-linear DE of the form:  
-$$y' + P(x)y = Q(x)y^n, \quad n 
-eq 0, 1$$
+In mathematics, an ordinary differential equation of the form:  
+$$y' + P(x)y = Q(x)y^n$$
+ is called a Bernoulli differential equation, where n is any real number and 
+ $n \ne 0,1 $ 
 
+ Bernoulli equations are special because they are non linear di erential
+ equations with known exact solutions
+ 
 ---
 
 ## 🧬 Michaelis–Menten Equation
 
-Used in enzyme kinetics:  
+ This equation is one of the best-known models of enzyme kinetics. The model
+ takes the form of an equation describing the rate of enzymatic reactions, by relating
+the reaction rate (rate of formation of product) to the concentration of a substrate
+ S:  
+
 $$
-u = rac{V_{max}[S]}{K_m + [S]}$$
+u = rac{V_{max}[S]}{K_m + [S]}
+$$
 
 Where:  
-- \( 
-u \): Reaction rate  
-- \( V_{max} \): Maximum rate  
-- \( K_m \): Substrate concentration at half of \( V_{max} \)
+- u : Reaction rate  
+- $V_{max} \$
+  : Maximum rate  
+- $K_m \$
+  : Substrate concentration at half of
+  $V_{max} \$
 
 ---
 
 ## 📉 Root-Mean-Square Deviation (RMSD)
 
-A measure of differences between predicted and observed values:  
-$$	ext{RMSD} = \sqrt{ rac{1}{n} \sum (y_i - \hat{y}_i)^2 }$$
+The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) is a
+ frequently used measure of the differences between values (sample or population
+ values) predicted by a model or an estimator and the values observed. The RMSD
+ represents the square root of the second sample moment of the differences between
+ predicted values and observed values or the quadratic mean of these differences:  
+
+$$	
+ext{RMSD} = \sqrt{ rac{1}{n} \sum (y_i - \hat{y}_i)^2 }
+$$
 
 ---
 
 ## 🧠 Levenberg–Marquardt Algorithm (LMA)
-
+ also known as the damped least-squares (DLS) method, is used to solve non-linear
+ least squares problems. The primary application of the Levenberg-Marquardt 
+ algorithm is in the least-squares curve fitting problem.
+ 
 Minimizes the sum of squared deviations:  
-$$\hat{eta} \in rg \min_{eta} \sum [y_i - f(x_i, eta)]^2$$
+![image](https://github.com/user-attachments/assets/8c0f6ab5-db44-4072-8d55-a3cf701555bd)
+
 
 ---
 
@@ -145,7 +167,10 @@ A PDE solution problem with specified initial/boundary conditions.
 
 ## 🪜 Heaviside Step Function
 
-Discontinuous function defined as:  
+ The Heaviside step function, or the unit step function, usually denoted by H or
+ (but sometimes u, 1 or ), is a discontinuous function, named after Oliver Heaviside
+ whose value is zero for negative arguments and one for positive arguments  
+
 $$
 H(x) =
 \begin{cases}
