@@ -27,7 +27,8 @@ $$
 
 Depending on whether \( k \) is positive or negative, the quantity \( x \) grows or decays with respect to \( t \).
 
-![Graph](graph3.png)
+![image](https://github.com/user-attachments/assets/47f32bf2-8f42-4394-8f76-b0e7c75894da)
+
 
 The fundamental differential equation
 
@@ -61,7 +62,10 @@ $$
 \frac{dy}{y} = kdt \Rightarrow \ln y = kt + c \Rightarrow y = Ce^{kt}
 $$
 
-Using initial condition \( y(0) = y_0 \Rightarrow C = y_0 \), and \( y(1) = 2y_0 \Rightarrow 2y_0 = y_0 e^k \Rightarrow k = \ln 2 \)
+Using the initial condition 
+$y(0) = y_0 \Rightarrow C = y_0$
+, and 
+$y(1) = 2y_0 \Rightarrow 2y_0 = y_0 e^k \Rightarrow k = \ln 2$
 
 Thus,
 
@@ -78,6 +82,38 @@ $$
 ---
 
 ## BIOLOGICAL GROWTH — VERHULST-PEARL MODEL
+
+
+A fundamental problem in biology is that of growth — whether it is the growth of a cell, an organ, a human, a plant, or a population.
+
+We already have the fundamental differential equation
+
+$$
+\frac{dN}{dT} = kN
+$$
+
+with the solution
+
+$$
+N = N_0 e^{kt}
+$$
+
+One obvious drawback of the Malthusian law of growth is that if $k > 0$, then $N \to \infty$ as $t \to \infty$, meaning that growth is unlimited. This conflicts with reality. After a certain period of time, we know that a cell or individual stops growing, having attained a maximum size. So, we modify the equation to better reflect biological constraints.
+
+Suppose $N$ denotes the size of a cell, and assume that the rate of change of size depends on the size in a more complex way than simple proportionality. That is, let
+
+$$
+\frac{dN}{dT} = F(N), \quad N(0) = N_0
+$$
+
+where $N_0$ represents the size at some specified initial time $t = 0$, and $F$ is an appropriate function. Since the linear function $F(N) = kN$ is not adequate, we consider a quadratic approximation:
+
+$$
+F(N) = aN - bN^2
+$$
+
+Here, $b > 0$ is chosen to inhibit growth as $N$ becomes large — a condition demanded by biological reality.
+
 
 To model growth with a limiting size (realistic in biological contexts), we use:
 
@@ -99,19 +135,23 @@ $$
 \frac{1}{a} \left[ \ln N - \ln(a - bN) \right] = t + c
 $$
 
-Solving for \( N \), we get the **Verhulst formula**:
+![image](https://github.com/user-attachments/assets/34623869-cb21-4115-a8a4-0791692ffd1f)
+
+Solving for N, we get the **Verhulst formula**:
 
 $$
 N(t) = \frac{\frac{a}{b}}{1 + \left( \frac{\frac{a}{b}}{N_0} - 1 \right)e^{-at}}
 $$
 
-As \( t \to \infty \), the population approaches a maximum:
+As $t \to \infty$, the population approaches a maximum:
 
 $$
 N_{\text{max}} = \frac{a}{b}
 $$
 
 If values \( N_0, N_1, N_2 \) at times \( 0, 1, 2 \) respectively are known, then:
+
+![image](https://github.com/user-attachments/assets/3afdfc4c-b52b-4c03-a5ec-343568eb4790)
 
 $$
 e^{-a} = \frac{N_0(N_2 - N_1)}{N_2(N_1 - N_0)}
@@ -129,7 +169,8 @@ $$
 N_{\text{max}} = \frac{N_1(N_0 N_1 - 2N_0 N_2 + N_1 N_2)}{N_1^2 - N_0 N_2}
 $$
 
-![Logistic Growth](graph4.png)
+![image](https://github.com/user-attachments/assets/e9f9b973-b045-4f09-a633-efbaa7623f35)
+
 
 This **logistic curve** is S-shaped and includes a point of inflection at which the growth rate starts to slow down.
 
