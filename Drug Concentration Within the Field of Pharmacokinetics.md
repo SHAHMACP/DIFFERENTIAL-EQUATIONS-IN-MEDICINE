@@ -82,7 +82,8 @@ $$
 
 This method quickly brings the concentration to the required level but may introduce side effects due to large initial dosing.
 
-> *Graphical Representation of Drug Concentration (graph7.png)*
+> *Graphical Representation of Drug Concentration* ![image](https://github.com/user-attachments/assets/69b97ce4-07f8-413c-8a84-48ca2e342c6b)
+
 
 ---
 
@@ -144,7 +145,8 @@ This is the time required to reach target concentration \$y\_c\$ after the first
 
 Compartmental models estimate how drugs are distributed and eliminated in the body. A two-compartment model considers two regions (e.g., blood and tissues) with different elimination rates.
 
-> *Diagram of Two-Compartment System (graph8.png)*
+> *Diagram of Two-Compartment System * ![image](https://github.com/user-attachments/assets/7c3ef55b-ee12-442d-b755-222255e4f765)
+
 
 Let \$V\_1\$, \$V\_2\$ be the volumes, \$g(t)\$ and \$b(t)\$ be the drug masses in compartments 1 (GI tract) and 2 (bloodstream). Area of the membrane is \$A\$.
 
@@ -248,8 +250,7 @@ $$
 g(t) = 2e^{-t}, \quad b(t) = 2e^{-t}
 $$
 
-> *Lidocaine Kinetics Model Diagram (graph)*
+> *Lidocaine Kinetics Model Diagram* ![image](https://github.com/user-attachments/assets/8bacf035-f3a2-4120-9e20-4c5e2f387530)
+
 
 ---
-
-Let me know if you'd like this content packaged with images for direct upload to GitHub, or if you'd like me to generate a `README.md` file for a full pharmacokinetics project structure.
